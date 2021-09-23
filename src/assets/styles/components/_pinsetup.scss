@@ -1,0 +1,102 @@
+.pinsetup {
+    &-logo {
+      width: 150px;
+      height: 90px;
+      object-fit: contain;
+      margin: auto;
+    }
+  
+    .outer-form {
+      position: absolute;
+      width: 350px;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      -moz-transform: translate3d(-50%, -50%, 0);
+      
+    @media (max-width:450px) {
+      width:95%;
+    }
+
+      .form-container {
+        border-radius: 5px;
+  
+      }
+
+      button.code,
+      button.next {
+        background-color: #4caf50;
+      }
+  
+      button.otp {
+        background-color: transparent;
+        border: 1px solid #4caf50;
+        color: #4caf50;
+
+        &:hover {
+            background-color: #4caf50;
+        transition: all .3s ease;
+        color:white; 
+        }
+      }
+  
+      .input-form {
+        height: 35px;
+        border-radius: 5px;
+        padding: 2px 8px;
+  
+        button {
+          height: 30px;
+          width: 65px;
+          font-size: 0.9rem;
+          border-radius: 5px;
+        }
+  
+        input {
+          height: 95%;
+          width: 100%;
+  
+          &::placeholder {
+            font-size: 0.7rem;
+          }
+  
+          &:focus {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+  
+      a {
+        color: #4caf50;
+        font-size: 0.8rem;
+      }
+  
+      .footer {
+        a {
+          color: white;
+          opacity: .8;
+        }
+      }
+    }
+  }
+  
+
+  .inner-form {
+      input {
+          width: 35px;
+          height: 35px;
+          border-radius: 5px;
+          padding: 5px;
+
+          &:not(:last-child) {
+              margin-right: 8px;
+          }
+
+          &:focus {
+            border: none;
+            outline: none;
+          }
+      }
+  }
